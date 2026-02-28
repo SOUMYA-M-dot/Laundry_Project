@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Laundry Services</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav>
+        <div class="logo">Laundry</div>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#about">About Us</a></li>
+            <li><a href="#contact">Contact Us</a></li>
+        </ul>
+        <div class="user">Username</div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-left">
+            <h1>Revitalize Your Clothes with Expert <span>Laundry Services!</span></h1>
+            <p>Premium dry cleaning to swift wash & fold. Book now and feel freshness.</p>
+            <button onclick="scrollToServices()">Book a Service Today</button>
+        </div>
+
+        <div class="hero-right">
+            <img src="laundary.jpeg">
+        </div>
+    </section>
+
+    <!-- Achievements -->
+    <section class="achievements">
+        <div>our achivements</div>
+        <div>15+ <br> Laundry Services</div>
+        <div>240+ <br> Happy Customers</div>
+        <div>2+ Yrs <br> Experience</div>
+    </section>
+
+    <!-- Services + Cart -->
+    <section id="services" class="services">
+
+        <!-- Left -->
+        <div class="service-list">
+            <h2>Our Services</h2>
+
+            <div class="service">
+                Dry Cleaning - ₹200
+                <button onclick="addItem('Dry Cleaning',200)">Add</button>
+            </div>
+
+            <div class="service">
+                Wash & Fold - ₹100
+                <button onclick="addItem('Wash & Fold',100)">Add</button>
+            </div>
+
+            <div class="service">
+                Ironing - ₹30
+                <button onclick="addItem('Ironing',30)">Add</button>
+            </div>
+
+            <div class="service">
+                Stain Removal - ₹500
+                <button onclick="addItem('Stain Removal',500)">Add</button>
+            </div>
+
+            <div class="service">
+                Wedding dress cleaning - ₹700
+                <button onclick="addItem('Wedding dress cleaning',700)">Add</button>
+            </div>
+
+        </div>
+
+        <!-- Right -->
+        <div class="cart">
+            <h2>Added Items</h2><br><br>
+
+            <ul id="cartItems"></ul><br><br>
+
+            <h3>Total: ₹<span id="total">0</span></h3><br><br>
+
+            <h2>Book Now</h2><br><br>
+            <form class="form-box">
+                <input type="text" placeholder="Full Name" id="name">
+                <input type="email" placeholder="Email" id="email">
+                <input type="text" placeholder="Phone">
+
+                <button onclick="bookNow()">Book Now</button>
+            </form>
+
+            <p id="msg"></p>
+        </div>
+
+    </section>
+
+    <!-- Quality Section -->
+    <!-- Why Choose Us -->
+    <section class="quality" id="about">
+        <h2>Why Choose Us</h2>
+
+        <div class="quality-box">
+
+            <div class="quality-card">
+                <div class="icon">⭐</div>
+                <h3>Premium Services</h3>
+                <p>We use high-quality cleaning products to ensure your clothes stay fresh and long-lasting.</p>
+            </div>
+
+            <div class="quality-card">
+                <div class="icon">⚡</div>
+                <h3>Quick Support</h3>
+                <p>Our team is available 24/7 to assist you with bookings and service queries.</p>
+            </div>
+
+            <div class="quality-card">
+                <div class="icon">🚚</div>
+                <h3>Free Delivery</h3>
+                <p>Enjoy free pickup and delivery services at your doorstep without extra charges.</p>
+            </div>
+
+            <div class="quality-card">
+                <div class="icon">💰</div>
+                <h3>Affordable Prices</h3>
+                <p>Best laundry services at budget-friendly prices with no hidden costs.</p>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <h2>Subscribe to our Newsletter</h2>
+        <input type="text" placeholder="Full Name">
+        <input type="email" placeholder="Email">
+        <button>Subscribe</button>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact">
+        <div>
+            <h3>Laundry</h3>
+            <p>Clean clothes, happy life.</p>
+        </div>
+
+        <div>
+            <h4>Important Links</h4>
+            <p>About</p>
+            <p>Services</p>
+            <p>Contact</p>
+        </div>
+
+        <div>
+            <h4>Contact</h4>
+            <p>support@mail.com</p>
+            <p>+91 9876543210</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
